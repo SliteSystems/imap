@@ -47,6 +47,6 @@ final class OrConditions implements ConditionInterface
             return $condition->toString();
         }, $this->conditions);
 
-        return \sprintf('( %s )', \implode(' OR ', $conditions));
+        return \sprintf('( OR %s )', \implode(' ', $conditions));
     }
 }
